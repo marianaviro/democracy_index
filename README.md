@@ -15,6 +15,7 @@ assessing if their country is losing freedom or becoming less democratic.
 
 ## Project Details
 
-- Data Source: V-Dem and BTI democracy indices
+- Data Source: [V-Dem](https://www.v-dem.net/) and
+  [BTI](https://bti-project.org/en/) democracy indices
 - Author: Mariana Villamizar
 - Date: August 2025
