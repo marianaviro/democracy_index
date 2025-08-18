@@ -1,19 +1,14 @@
 import { useEffect, useState } from "react";
 import * as d3 from "d3";
-// image in source folder:
-// import reactLogo from "./assets/react.svg";
-// image in public folder
-// import viteLogo from "/vite.svg";
 import "./App.css";
-import { IndexView } from "./components/IndexView";
+import { GardenView } from "./components/GardenView";
 
 function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    d3.csv("/data/latam-v-dem.csv", d3.autoType)
+    d3.csv("/data/latam-v-dem-2000.csv", d3.autoType)
       .then((loadedData) => {
-        // console.log("Data loaded:", loadedData);
         setData(loadedData);
       })
       .catch((error) => {
@@ -24,7 +19,7 @@ function App() {
   console.log(data, "APP data");
 
   return (
-    <div>{data ? <IndexView data={data} /> : <div> Loading data... </div>}</div>
+    <>{data ? <GardenView data={data} /> : <div> Loading data... </div>}</>
   );
 }
 

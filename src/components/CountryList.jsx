@@ -1,10 +1,11 @@
 import { Country } from "./Country";
+
 export function CountryList({
   countries,
   index,
   startYear,
   endYear,
-  selectedIndices,
+  colorByChange,
 }) {
   const indexByCountry = Array.from(countries, ([country, values]) => ({
     country,
@@ -22,7 +23,7 @@ export function CountryList({
             index={index}
             startYear={startYear}
             endYear={endYear}
-            selectedIndices={selectedIndices}
+            colorByChange={colorByChange}
           />
         );
       })}
