@@ -6,13 +6,27 @@ export function ChartWrapper({ data, index, colKey }) {
 
   let margin = {
     top: 80,
-    right: 20,
-    bottom: 50,
-    left: 75,
+    right: 40,
+    bottom: 60,
+    left: 80,
   };
 
   return (
     <div className="chart-wrapper" ref={ref}>
+      <div className="legend">
+        <div className="left">
+          <img src="/arrow-icon.svg" />
+          <p>
+            <b>More</b> {index}
+          </p>
+        </div>
+        <div className="right">
+          <img src="/arrow-icon.svg" />
+          <p>
+            <b>Less</b> {index}
+          </p>
+        </div>
+      </div>
       <LineChart
         key={index}
         data={data}

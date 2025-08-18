@@ -19,7 +19,21 @@ function App() {
   console.log(data, "APP data");
 
   return (
-    <>{data ? <GardenView data={data} /> : <div> Loading data... </div>}</>
+    <>
+      <div className="intro">
+        <div className="title">
+          <p>Democracy in Bloom</p>
+          <p>By: Mariana Villamizar Rodríguez</p>
+        </div>
+
+        <h1>
+          Democracies can be measured according to how <span>electoral</span>,{" "}
+          <span>liberal</span>, <span>participatory</span>,{" "}
+          <span>deliberative</span>, or <span>egalitarian</span> they are.
+        </h1>
+      </div>
+      {data ? <GardenView data={data} /> : <div> Loading data... </div>}
+    </>
   );
 }
 
