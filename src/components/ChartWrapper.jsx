@@ -17,13 +17,13 @@ export function ChartWrapper({ data, index, colKey }) {
         <div className="left">
           <img src="/arrow-icon.svg" />
           <p>
-            <b>More</b> {index}
+            <b>Less</b> {index}
           </p>
         </div>
         <div className="right">
           <img src="/arrow-icon.svg" />
           <p>
-            <b>Less</b> {index}
+            <b>More</b> {index}
           </p>
         </div>
       </div>

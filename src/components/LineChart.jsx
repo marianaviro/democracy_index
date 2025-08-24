@@ -19,7 +19,7 @@ export function LineChart({ data, width, height, margin, index, colKey }) {
 
   let xScale = d3
     .scaleLinear()
-    .domain([10, 0])
+    .domain([0, 10])
     .range([margin.left, width - margin.right]);
 
   let yScale = d3
@@ -69,8 +69,8 @@ export function LineChart({ data, width, height, margin, index, colKey }) {
       <svg className="" viewBox={`0 0 ${width} ${height}`}>
         <defs>
           <linearGradient id="grad" x1="0%" x2="100%" y1="0%" y2="0%">
-            <stop offset="20%" stop-color="#c1f7d6ff" />
-            <stop offset="80%" stop-color="#c4c4c4ff" />
+            <stop offset="20%" stop-color="#c4c4c4ff" />
+            <stop offset="80%" stop-color="#c1f7d6ff" />
           </linearGradient>
         </defs>
         <rect
@@ -120,7 +120,7 @@ export function LineChart({ data, width, height, margin, index, colKey }) {
             />
             <text x="15" y="50" fontSize="14px" pointerEvents="none">
               <tspan x="15" dy="0" stroke="black">
-                Species:
+                Country:
               </tspan>{" "}
               <tspan x="15" dy="1.3em">
                 {tooltip.text.country_name}

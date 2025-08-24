@@ -26,11 +26,11 @@ function App() {
           <p>By: Mariana Villamizar Rodríguez</p>
         </div>
 
-        <h1>
+        {/* <h1>
           Democracies can be measured according to how <span>electoral</span>,{" "}
           <span>liberal</span>, <span>participatory</span>,{" "}
           <span>deliberative</span>, or <span>egalitarian</span> they are.
-        </h1>
+        </h1> */}
       </div>
       {data ? <GardenView data={data} /> : <div> Loading data... </div>}
     </>

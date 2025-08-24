@@ -1,0 +1,40 @@
+.controls {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.control label, .control button {
+  margin-bottom: 5px;
+  color: #8f6ad3;
+}
+
+.control .btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.control button {
+  padding: 0.5rem 1rem;
+  background-color: #f3ebf9;
+  border-radius: 10px;
+  border: 1.25px solid #ceb9f6;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #8f6ad3;
+  line-height: 2rem;
+  font-style: normal;
+  text-align: left;
+}
+
+.control button:hover{
+  background-color: #ebe0f4;
+  cursor: pointer;
+}
