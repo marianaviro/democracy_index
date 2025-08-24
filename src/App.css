@@ -7,7 +7,6 @@
   width: 100vw;
   height: 100vh;
   max-height: 100vh;
-  font-family: 'Inconsolata';
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -108,7 +107,6 @@
   border: 1.25px solid #ceb9f6;
   color: rgb(14, 154, 47);
   color: #8f6ad3;
-  font-family: 'Inconsolata';
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
